@@ -11,6 +11,10 @@ yelp_soup = BeautifulSoup(yelp_r.text, 'html.parser')
 #print(yelp_soup.prettify())
 #print(yelp_soup.findAll('a'))
 
-for link in yelp_soup.findAll('a'):
-    print(link)
-#
+# Pull Page Title
+#print ("\nThe Page Title is: " + yelp_soup.title.text)
+
+#for link in yelp_soup.findAll('a'):
+#    print(link.get('href'))
+
+print(yelp_soup.find("div", class_="secondary-attributes"))
