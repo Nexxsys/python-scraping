@@ -18,3 +18,4 @@ yelp_soup = BeautifulSoup(yelp_r.text, 'html.parser')
 #    print(link.get('href'))
 
 print(yelp_soup.find("div", class_="secondary-attributes"))
+print(yelp_soup.find_all("title"))
