@@ -1,0 +1,2 @@
+SUDO cp geckodriver /usr/local/bin
+
